@@ -1,7 +1,7 @@
-# ***Finite State Machine | Front End*** 💻️
+# ***CYK Algorithm | Front End*** 💻️
 
 <p style="text-align: justify">
-    <i>Web application that allows it to get a related or minimum mealy or moore machine</i>
+    <i>Web application that from a context-independent grammar G and a string w determines whether the grammar generates that string</i>
 </p>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f5758e0a-53c8-4fea-a765-1d4117116c8d/deploy-status)](https://app.netlify.com/sites/strong-pika-c22ead/deploys)
