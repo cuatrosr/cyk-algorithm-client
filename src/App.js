@@ -68,17 +68,17 @@ function App() {
                             <Typography component="h1" variant="h2" align="center" color="text.primary" gutterBottom>
                                 CYK
                             </Typography>
-                            <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                                A partir de una gramática independiente de contexto G
+                            <Typography variant="h6" align="center" color="text.secondary" paragraph>
+                                A partir de una gramática independiente de contexto G (en FNC)
                                 y una cadena w se determina si la gramática genera dicha cadena.
-                                Recuerda separar Var con el separador '|'.
+                                Recuerda separar las producciones con el separador '|'.
                             </Typography>
                         </Container>
                     </Box>
                     <Container sx={{flexGrow: 1}} maxWidth={"md"}>
                         <Grid container spacing={1}>
                             <Grid item xs={12} sm={6}>
-                                <ATextField name={'amountOfTerminals'} label={'Cantidad de Terminales'} type={'number'}
+                                <ATextField name={'amountOfTerminals'} label={'Cantidad de Variables'} type={'number'}
                                             value={machine.amountOfTerminals} handleChange={handleFieldChange}/>
                             </Grid>
                             <Grid item xs={12} sm={6}>

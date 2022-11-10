@@ -9,7 +9,7 @@ const SimpleAppBar = () => {
             <Toolbar>
                 <AdfScannerIcon sx={{mr: 2}}/>
                 <Typography variant="h6" color="inherit" noWrap>
-                    Maquina de Estado Finita
+                    Algoritmo CYK
                 </Typography>
             </Toolbar>
         </AppBar>

@@ -1,9 +1,9 @@
 export function generateColumns() {
-    return [{field: 'Terminals', width: 200}, {field: 'Var', headerName: 'Var', width: 200, editable: true}]
+    return [{field: 'Variables', width: 200}, {field: 'Var', headerName: 'Producciones', width: 200, editable: true}]
 }
 
 export const generateRows = (columns, amountOfTerminals) => {
-    let rows = [{id: 1, Terminals: 'S', Var: ''}]
+    let rows = [{id: 1, Variables: 'S', Var: ''}]
     let aux = 0;
     for (let i = 1; i < amountOfTerminals; i++) {
         let row = {id: i + 1}
