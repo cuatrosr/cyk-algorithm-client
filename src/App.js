@@ -19,13 +19,16 @@ const theme = createTheme()
 function App() {
     const [dataTable, setDataTable] = React.useState({columns: [], rows: []})
     const [machine, setMachine] = React.useState({amountOfTerminals: 0, string: ''});
+    const [change, hasChange] = React.useState(false);
     const [open, setOpen] = React.useState(false)
     React.useEffect(() => {
-        setOpen(validateBeforeShowMachineTable())
+        if (change)
+            setOpen(validateBeforeShowMachineTable())
     }, [machine])// eslint-disable-line react-hooks/exhaustive-deps
 
     const handleFieldChange = (event) => {
         const {name, value} = event.target
+        hasChange(name === 'amountOfTerminals' || (name === 'string' && ((machine.string === '' && value.length === 1) || value === '')))
         setMachine({...machine, [name]: value});
     };
 

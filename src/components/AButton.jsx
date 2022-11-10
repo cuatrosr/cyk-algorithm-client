@@ -15,7 +15,7 @@ const AButton = ({dataTable, string, isDisable, name, endIcon}) => {
                 setLoading(true)
                 const json = adapterFromClient(dataTable.rows, dataTable.columns, string)
                 const headers = {'Content-Type': 'application/json'}
-                const response = await axios.post(`https://localhost:8080/cyk`, json, {headers: headers})
+                const response = await axios.post(`http://localhost:8080/cyk`, json, {headers: headers})
                 const msg = (response.data.response) ? 'La gramática SI genera esa cadena' : 'La gramática NO genera esa cadena';
                 enqueueSnackbar(msg, {variant: 'success'})
                 setLoading(false)
