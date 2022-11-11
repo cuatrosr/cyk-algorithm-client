@@ -48,7 +48,7 @@ function App() {
     );
 
     const validateBeforeShowMachineTable = () => {
-        if (machine.amountOfTerminals > 0 && machine.string !== '') {
+        if (machine.amountOfTerminals > 0) {
             const columns = generateColumns(machine.amountOfTerminals)
             const rows = generateRows(columns, machine.amountOfTerminals)
             setDataTable({...dataTable, columns, rows})
